@@ -1,0 +1,15 @@
+../Core/Src/main.c:91:8:reset	1
+../Core/Src/main.c:64:5:main	1
+../Core/Src/main.c:105:8:zero	1
+../Core/Src/main.c:117:8:one	1
+../Core/Src/main.c:124:8:two	1
+../Core/Src/main.c:134:8:three	1
+../Core/Src/main.c:144:8:four	1
+../Core/Src/main.c:153:8:five	1
+../Core/Src/main.c:163:8:six	1
+../Core/Src/main.c:170:8:seven	1
+../Core/Src/main.c:177:8:eight	1
+../Core/Src/main.c:185:8:nine	1
+../Core/Src/main.c:231:6:SystemClock_Config	3
+../Core/Src/main.c:273:13:MX_GPIO_Init	1
+../Core/Src/main.c:312:6:Error_Handler	1
