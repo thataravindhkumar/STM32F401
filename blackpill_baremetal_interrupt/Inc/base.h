@@ -15,10 +15,13 @@
 #define RCC_OFFSET (0x00003800) //Starting address of RCC - Starting address of AHB1
 #define RCC (AHB1_PERIPHERAL + RCC_OFFSET) //Starting address of RCC
 
-#define APB2_PERIPHERAL_OFFSET (0x00010000) //Starting address of APB2 - Starting address of all peripherals
+#define APB2_PERIPHERAL_OFFSET (0x00007400) //Starting address of APB2 - Starting address of all peripherals
 #define APB2_PERIPHERAL (PERIPHERAL_BASE + APB2_PERIPHERAL_OFFSET) //Starting address of APB2
 
-#define EXTI_OFFSET (0x00003C00) ////Starting address of EXTI - Starting address of APB2
+#define EXTI_OFFSET (0x00003C00) //Starting address of EXTI - Starting address of APB2
 #define EXTI (APB2_PERIPHERAL + EXTI_OFFSET) //Starting address of EXTI
+
+#define SYSCFG_OFFSET (0x0000C400) //Starting address of SYSCFG - Starting address of all peripherals
+#define SYSCFG (APB2_PERIPHERAL + SYSCFG_OFFSET) //Starting address of SYSCFG
 
 #endif /* BASE_H_ */
