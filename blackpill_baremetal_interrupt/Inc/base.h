@@ -24,4 +24,6 @@
 #define SYSCFG_OFFSET (0x0000C400) //Starting address of SYSCFG - Starting address of all peripherals
 #define SYSCFG (APB2_PERIPHERAL + SYSCFG_OFFSET) //Starting address of SYSCFG
 
+#define NVIC (0xE000E100) //Starting address of NVIC
+
 #endif /* BASE_H_ */

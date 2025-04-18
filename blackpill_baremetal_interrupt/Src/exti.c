@@ -13,4 +13,6 @@ void exti_init()
 	SYSCFG_EXTICR1 &= ~(1U<<1);
 	SYSCFG_EXTICR1 &= ~(1U<<2);
 	SYSCFG_EXTICR1 &= ~(1U<<3);
+
+	NVIC_ISER0 |= (1U<<6); //Enable interrupt for EXTI0
 }
