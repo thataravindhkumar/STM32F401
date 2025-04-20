@@ -10,7 +10,7 @@ void delay(void) //An approximate 1 second delay using empty for loops
 
 int main(void)
 {
-	gpio_init();
+    gpio_init();
     while(1)
     {
     	gpio_userled_toggle();

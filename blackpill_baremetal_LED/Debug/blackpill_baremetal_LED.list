@@ -180,7 +180,7 @@ int main(void)
 {
  800026c:	b580      	push	{r7, lr}
  800026e:	af00      	add	r7, sp, #0
-	gpio_init();
+    gpio_init();
  8000270:	f7ff ffb0 	bl	80001d4 <gpio_init>
     while(1)
     {
