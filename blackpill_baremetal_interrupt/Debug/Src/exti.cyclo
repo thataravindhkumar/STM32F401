@@ -1,0 +1,2 @@
+../Src/exti.c:4:6:exti_init	1
+../Src/exti.c:21:6:exti0_handler	2

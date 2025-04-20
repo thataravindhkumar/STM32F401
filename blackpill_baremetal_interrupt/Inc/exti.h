@@ -12,6 +12,9 @@
 #define EXTI_FTSR_OFFSET (0x0C) //Define the address of EXTI_FTSR register
 #define EXTI_FTSR (*(volatile unsigned int *)(EXTI + EXTI_FTSR_OFFSET))
 
+#define EXTI_PR_OFFSET (0x14) //Define the address of EXTI pending register
+#define EXTI_PR (*(volatile unsigned int *)(EXTI + EXTI_PR_OFFSET))
+
 #define SYSCFG_EXTICR1_OFFSET (0x08) //Define the address of SYSCFG_EXTICR1 register
 #define SYSCFG_EXTICR1 (*(volatile unsigned int *)(SYSCFG + SYSCFG_EXTICR1_OFFSET))
 
@@ -23,5 +26,6 @@
 
 //Function prototypes
 void exti_init(void);
+void exti0_handler(void);
 
 #endif /* EXTI_H_ */

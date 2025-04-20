@@ -10,17 +10,16 @@ void gpio_init()
 	GPIOC_MODER |= (1U<<26);
 	GPIOC_MODER &= ~(1U<<27);
 
+	//Setting PA0 (user button) as default high (pull up)
+	GPIOA_PUPDR |= (1U<<0);
+	GPIOA_PUPDR &= ~(1U<<1);
+
 	//Setting PA0 (user button) as GPIO input
 	GPIOA_MODER |= (0U<<0);
 	GPIOA_MODER |= (0U<<1);
 }
 
-void gpio_userled_on()
+void gpio_userled_toggle()
 {
-	GPIOC_ODR |= (1U<<13);
-}
-
-void gpio_userled_off()
-{
-	GPIOC_ODR &= ~(1U<<13);
+	GPIOC_ODR ^= (1U<<13);
 }
