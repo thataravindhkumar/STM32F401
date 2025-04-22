@@ -8,6 +8,7 @@ int main()
 
 	while(1)
 	{
+		exti0_handler();
 	}
 
 	return 0;
