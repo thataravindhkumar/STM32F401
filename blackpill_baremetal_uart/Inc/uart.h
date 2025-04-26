@@ -25,7 +25,7 @@
 
 //Function prototypes
 void uart_init(void);
-char uart_read();
-void uart_write();
+char uart_read(void);
+void uart_write(const char *str);
 
 #endif /* UART_H_ */
