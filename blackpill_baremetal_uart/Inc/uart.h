@@ -13,7 +13,7 @@
 
 //Defining the baud rate register
 #define USART_BRR_OFFSET (0x08)
-#define USART_BRR_OFFSET (*(volatile unsigned int *)(USART1_PERIPHERAL + USART_BRR_OFFSET))
+#define USART_BRR (*(volatile unsigned int *)(USART1_PERIPHERAL + USART_BRR_OFFSET))
 
 //Defining the data register
 #define USART_DR_OFFSET (0x04)
@@ -25,7 +25,7 @@
 
 //Function prototypes
 void uart_init(void);
-void uart_read();
+char uart_read();
 void uart_write();
 
 #endif /* UART_H_ */
