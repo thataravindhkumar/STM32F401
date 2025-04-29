@@ -58,4 +58,13 @@ void uart_write(const char *str)
 		//Move on to the next string
 		str++;
 	}
+
+
+	while(!(TXE));
+
+	//Send "carriage return" that returns cursor to the beginning
+	USART_DR = '\r';
+
+	//Send "newline" that brings the cursor to a new line
+	USART_DR = '\n';
 }
